@@ -2,6 +2,14 @@
     "name": "dala00/cakephp-simple-upload",
     "description": "Upload handle plugin for CakePHP",
     "type": "cakephp-plugin",
+	"keywords": ["cakephp", "upload", "files", "behavior", "orm"],
+	"license": "MIT",
+	"authors": [
+	   {
+		   "name": "Shoichi Namba",
+		   "email": "alphabrend@gmail.com"
+	   }
+	],
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.0"
@@ -11,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Upload\\": "src"
+            "dala00\\Upload\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Upload\\Test\\": "tests",
+            "dala00\\Upload\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }
