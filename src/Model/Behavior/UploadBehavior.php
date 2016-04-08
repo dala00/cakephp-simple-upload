@@ -49,7 +49,7 @@ class UploadBehavior extends Behavior
 		$this->_initializedConfig = $config;
         $this->config($config);
 
-		Type::map('upload.file', 'Upload\Database\Type\FileType');
+		Type::map('upload.file', 'Dala00\Upload\Database\Type\FileType');
 		$schema = $this->_table->schema();
 		foreach ($config['fields'] as $field => $settings) {
 			$schema->columnType($field, 'upload.file');
