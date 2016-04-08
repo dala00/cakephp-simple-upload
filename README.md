@@ -19,7 +19,7 @@ composer require dala00/cakephp-simple-upload
 And load plugin on bootstrap.php.
 
 ```php
-Plugin::load('dala00/Upload');
+Plugin::load('Dala00/Upload');
 ```
 
 ## Usage
@@ -27,7 +27,6 @@ Plugin::load('dala00/Upload');
 Load UploadBehavior with options.
 
 ```php
-<?php
 class SomeTable extends Table {
 	public function initialize(array $config) {
 		$this->addBehavior('Dala00/Upload.Upload', [
@@ -44,11 +43,11 @@ class SomeTable extends Table {
 ### UploadHelper
 You can output URL or img tag with UploadHelper.
 
-```
-(In Controller)
+```php
+// In Controller
 public $helpers = ['Dala00/Upload.Upload'];
 ```
-```
+```php
 (In Templates)
 <img src="<?= $this->Upload->url($entity, $fieldName) ?>">
 or
@@ -64,7 +63,7 @@ If you want show confirm page before saving post, next method saves files as cac
 // Call in action when confirm page will be shown
 $this->SomeTable->uploadTmpFile($entity);
 ```
-```
+```php
 // Output hidden tag with UploadHelper on templates
 <?= $this->Upload->hidden($entity, $fieldName) ?>
 ```
