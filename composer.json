@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "dala00\\Upload\\": "src"
+            "Dala00\\Upload\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "dala00\\Upload\\Test\\": "tests",
+            "Dala00\\Upload\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }

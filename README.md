@@ -30,7 +30,7 @@ Load UploadBehavior with options.
 <?php
 class SomeTable extends Table {
 	public function initialize(array $config) {
-		$this->addBehavior('Upload.Upload', [
+		$this->addBehavior('Dala00/Upload.Upload', [
 			'fields' => [
 				'photo' => [
 					'path' => 'webroot{DS}files{DS}{model}{DS}{primaryKey}{DS}{field}{DS}'
@@ -46,7 +46,7 @@ You can output URL or img tag with UploadHelper.
 
 ```
 (In Controller)
-public $helpers = ['Upload.Upload'];
+public $helpers = ['Dala00/Upload.Upload'];
 ```
 ```
 (In Templates)
