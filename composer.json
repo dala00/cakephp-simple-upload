@@ -28,5 +28,15 @@
             "Dala00\\Upload\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs --colors -p ./src ./tests",
+        "cs-fix": "phpcbf --colors ./src ./tests",
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-clover=clover.xml"
     }
 }

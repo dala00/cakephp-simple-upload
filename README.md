@@ -1,5 +1,9 @@
 # Simple upload handle plugin for CakePHP3
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+[![Build Status](https://img.shields.io/travis/dala00/cakephp-simple-upload/master.svg?style=flat-square)](https://travis-ci.org/dala00/cakephp-simple-upload)
+[![Coverage Status](https://img.shields.io/codecov/c/github/dala00/cakephp-simple-upload.svg?style=flat-square)](https://codecov.io/github/dala00/cakephp-simple-upload)
+
 ## Description
 
 * Handle file post to save and upload automatically.
