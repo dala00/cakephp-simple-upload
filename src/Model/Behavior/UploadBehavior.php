@@ -3,13 +3,13 @@ namespace Dala00\Upload\Model\Behavior;
 
 use ArrayObject;
 use Cake\Database\Type;
+use Cake\Event\Event;
 use Cake\ORM\Behavior;
+use Cake\ORM\Entity;
 use Cake\ORM\Table;
 use Cake\Utility\Hash;
-use Cake\Event\Event;
-use Cake\ORM\Entity;
-use Dala00\Upload\File\FileSystemInterface;
 use Dala00\Upload\File\DefaultFileSystem;
+use Dala00\Upload\File\FileSystemInterface;
 
 /**
  * Upload behavior
@@ -57,10 +57,11 @@ class UploadBehavior extends Behavior
         $this->_table->schema($schema);
         $this->fileSystem(new DefaultFileSystem);
     }
+
     /**
      * Initialize hook
      *
-     * @param FileSystemInterface $fileSystem
+     * @param FileSystemInterface $fileSystem Set file system
      * @return void|FileSystemInterface
      */
     public function fileSystem(FileSystemInterface $fileSystem = null)

@@ -1,10 +1,10 @@
 <?php
 namespace Dala00\Upload\View\Helper;
 
-use Cake\View\Helper;
-use Cake\View\View;
 use Cake\ORM\Entity;
 use Cake\ORM\TableRegistry;
+use Cake\View\Helper;
+use Cake\View\View;
 
 /**
  * UploadConfirm helper

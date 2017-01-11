@@ -4,8 +4,8 @@ namespace Dala00\Upload\Test\TestCase\Model\Behavior;
 use ArrayObject;
 use Cake\Event\Event;
 use Cake\TestSuite\TestCase;
-use Dala00\Upload\Model\Behavior\UploadBehavior;
 use Dala00\Upload\File\DebugFileSystem;
+use Dala00\Upload\Model\Behavior\UploadBehavior;
 
 /**
  * Upload\Model\Behavior\UploadBehavior Test Case

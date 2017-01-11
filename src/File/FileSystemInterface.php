@@ -9,7 +9,7 @@ interface FileSystemInterface
      *
      * @param string $source The path copied from
      * @param string $dest The path copy to
-     * @return boolean
+     * @return bool
      */
     public function copy($source, $dest);
 
@@ -17,7 +17,7 @@ interface FileSystemInterface
      * Call php file_exists.
      *
      * @param string $path Path for check
-     * @return boolean
+     * @return bool
      */
     public function fileExists($path);
 
@@ -25,25 +25,27 @@ interface FileSystemInterface
      * Call php mkdir and chmod
      *
      * @param string $path Path for make
-     * @return boolean
+     * @param int $mode directory initial permission
+     * @param bool $recursive if create directories recursively
+     * @return bool
      */
     public function mkdir($path, $mode = 0777, $recursive = false);
 
     /**
      * Call php rename
      *
-     * @param string $oldname
-     * @param string $newname
-     * @return boolean
+     * @param string $oldname old file name
+     * @param string $newname new file name
+     * @return bool
      */
     public function rename($oldname, $newname);
 
     /**
      * Call php chmod
      *
-     * @param string $path
-     * @param string $mode
-     * @return boolean
+     * @param string $path change path
+     * @param string $mode change mode
+     * @return bool
      */
     public function chmod($path, $mode);
 }

@@ -1,12 +1,12 @@
 <?php
 namespace Dala00\Upload\Test\TestCase\View\Helper;
 
-use Dala00\Upload\View\Helper\UploadHelper;
-use Dala00\Upload\Model\Behavior\UploadBehavior;
+use Cake\ORM\Table;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
-use Cake\ORM\TableRegistry;
-use Cake\ORM\Table;
+use Dala00\Upload\Model\Behavior\UploadBehavior;
+use Dala00\Upload\View\Helper\UploadHelper;
 
 /**
  * Upload\View\Helper\UploadHelper Test Case
@@ -84,7 +84,7 @@ class UploadHelperTest extends TestCase
     {
         $image = [
             'name' => 'test.jpg',
-            'tmp_name' =>  '/tmp/aewoijaefijaw',
+            'tmp_name' => '/tmp/aewoijaefijaw',
             'size' => 123,
             'error' => UPLOAD_ERR_OK,
             'cache' => '09uef09ajwe09fjawoejfawj3fwaef',
