@@ -127,6 +127,13 @@ class UploadBehavior extends Behavior
             }
 
             $data = $entity->get($field);
+            if (!empty($settings['rename'])) {
+                if ($settings['rename'] === true) {
+                    $parts = explode('.', $data['name']);
+                    $ext = array_pop($parts);
+                    $data['name'] = uniqid('') . '.' . $ext;
+                }
+            }
             $this->_cache[$field] = $data;
             $entity->set($field, $data['name']);
         }
